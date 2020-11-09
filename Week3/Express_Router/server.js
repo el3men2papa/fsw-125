@@ -1,4 +1,3 @@
-
 //its needed to be able to request body from API it will be needing 
 //app.use(express.json())
 const { json } = require("express")
@@ -25,7 +24,6 @@ Type: "Sith",
 _id: uuidv4()
 }
 ]
-
 //is calling my fake data into the server
 app.get("/bountyRoute",(req, res) =>{
     //I will send the fake data to the server (API)
@@ -42,7 +40,7 @@ app.post("/bountyRoute", (req, res) => {
     //It will add the new input to the curent data
     bountyRoute.push(newBountyRoute)
     //When everything goes well it will populate the message if not check the codes
-    res.send(`You have Succesfully added a ${newBountyRoute.Type} to the database`)
+    res.send(`You have Succesfully added a new ${newBountyRoute.Type} to the database`)
 })
 
 //Its building the server to be call into postman or the client (HTML)
@@ -50,4 +48,5 @@ app.listen(9000, () =>{
     //When everything goes well it will populate the message if not check the codes
     console.log("The server is running on port 9000")
 })
+
 
