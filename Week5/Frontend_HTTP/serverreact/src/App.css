@@ -1,0 +1,58 @@
+body{
+  background-color: aquamarine;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+ 
+}
+
+.jedi-container{
+  display: flex;
+  flex-direction: column;
+  margin: 0, 32px;
+  padding: 5px;
+}
+/* found on jedi.JS */
+.jedi{
+  border: 1px solid black;
+  padding: 10px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+
+.Header{
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+}
+
+.close-btn{
+  color: black;
+  background-color: red;
+  border-radius: 8px;
+  
+}
+
+.add-btn{
+  
+  border-radius: 8px;
+  color: white;
+  background-color: grey;
+  border-radius: 8px;
+}
+
+.delete-btn{
+  color: black;
+  background-color: red;
+  border-radius: 8px;
+}
+
+.edit-btn{
+  color: black;
+  background-color:blue;
+  border-radius: 8px;
+}
