@@ -13,9 +13,8 @@ export default  function Jedi(props){
         <div className="jedi">
             { !ediToggle ?
             <> {/* This is an invisible div */}
-        <p>Jedi Name: {FirstName} {LastName}</p>
+        <p>Name: {FirstName} {LastName} ({Type})</p>
     <p>Bounty Credits: {BountyAmount}</p>
-    <p>Is the {Type} alive? {Living}</p>
     <p>Bounty claim ID {_id}</p>
     <button
     className="delete-btn"
@@ -26,7 +25,7 @@ export default  function Jedi(props){
     onClick={() => setEditToggle(prevToggle => !prevToggle)}
     >Edit</button>
     </>
-
+    
 :
 
     <>
