@@ -16,6 +16,13 @@ app.use(morgan("dev"))
 //Is importing the express router from jediRouter
 app.use("/bountyRoute", require("./jediRouter"))
 
+//this will handle all errors to be reflected from everywhere
+app.use((err, req, res, next) => {
+    console.log(err)
+    return res.send({errMsg: err.message})
+})
+
+
 //Its building the server to be call into postman or the client (HTML)
 app.listen(9000, () =>{
 //When everything goes well it will populate the message if not check the codes
